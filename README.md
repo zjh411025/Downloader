@@ -47,6 +47,9 @@ Java实现的一个简单的多线程下载器，支持断点续传。这两项�
 //下载IDEA安装文件
 //四个参数,后面时log_m和Remove_files参数
 //后面一定要加".start()",不然就是下载寂寞
-new Downloader("https://download.jetbrains.com/idea/ideaIC-2022.3.2.exe","Idea.exe",true,fale).start();
+new Downloader("https://download.jetbrains.com/idea/ideaIC-2022.3.2.exe","Idea.exe",true,false).start();
 //设置两个线程,默认4个
-new Downloader("https://download.jetbrains.com/idea/ideaIC-2022.3.2.exe",2,"Idea.exe",true,fale).start();
+new Downloader("https://download.jetbrains.com/idea/ideaIC-2022.3.2.exe",2,"Idea.exe",true,false).start();
+``````
+---
+### 复刻自[yuanyb/Downloader](https://github.com/yuanyb/Downloader)
